@@ -13,6 +13,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "8.0.2",
           "NetTopologySuite": "2.5.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite": "8.0.2",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -398,6 +399,17 @@
           }
         }
       },
+      "NetTopologySuite.IO.PostGis/2.1.0": {
+        "dependencies": {
+          "NetTopologySuite": "2.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/NetTopologySuite.IO.PostGis.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
       "Npgsql/8.0.2": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
@@ -418,6 +430,31 @@
         },
         "runtime": {
           "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "assemblyVersion": "8.0.2.0",
+            "fileVersion": "8.0.2.0"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite/8.0.2": {
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2",
+          "Npgsql.NetTopologySuite": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.dll": {
+            "assemblyVersion": "8.0.2.0",
+            "fileVersion": "8.0.2.0"
+          }
+        }
+      },
+      "Npgsql.NetTopologySuite/8.0.2": {
+        "dependencies": {
+          "NetTopologySuite": "2.5.0",
+          "NetTopologySuite.IO.PostGis": "2.1.0",
+          "Npgsql": "8.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Npgsql.NetTopologySuite.dll": {
             "assemblyVersion": "8.0.2.0",
             "fileVersion": "8.0.2.0"
           }
@@ -751,6 +788,13 @@
       "path": "nettopologysuite/2.5.0",
       "hashPath": "nettopologysuite.2.5.0.nupkg.sha512"
     },
+    "NetTopologySuite.IO.PostGis/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3W8XTFz8iP6GQ5jDXK1/LANHiU+988k1kmmuPWNKcJLpmSg6CvFpbTpz+s4+LBzkAp64wHGOldSlkSuzYfrIKA==",
+      "path": "nettopologysuite.io.postgis/2.1.0",
+      "hashPath": "nettopologysuite.io.postgis.2.1.0.nupkg.sha512"
+    },
     "Npgsql/8.0.2": {
       "type": "package",
       "serviceable": true,
@@ -764,6 +808,20 @@
       "sha512": "sha512-eoZPynwkZTWFTgnocvXORuCL2yFZtscrUdqVhjxiRULpC7BMg9zhLM5oDZAU5PoX1PgN77hmkKE4a3PQiHqh7Q==",
       "path": "npgsql.entityframeworkcore.postgresql/8.0.2",
       "hashPath": "npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512"
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NO4EXEsa0iRHUmHGss7U1fpAUKJ0yz9RIG284NZFOfqysm9GgrFM59OKdzjLc1br1EILv78DLL/uj0BD0fcPVw==",
+      "path": "npgsql.entityframeworkcore.postgresql.nettopologysuite/8.0.2",
+      "hashPath": "npgsql.entityframeworkcore.postgresql.nettopologysuite.8.0.2.nupkg.sha512"
+    },
+    "Npgsql.NetTopologySuite/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FQtqjMyZM9/V480rehWMah+KYqeBfCtk77n+pShPFZ2M+DSE+vn5tjpKZX02/oeTbWeExPBVya2idMttB0d7oQ==",
+      "path": "npgsql.nettopologysuite/8.0.2",
+      "hashPath": "npgsql.nettopologysuite.8.0.2.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.4.0": {
       "type": "package",

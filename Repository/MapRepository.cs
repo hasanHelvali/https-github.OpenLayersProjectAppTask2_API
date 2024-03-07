@@ -7,6 +7,12 @@ namespace BasarSoftTask2_API.Repository
     public class MapRepository<T> : IMapRepository<T> where T : class
     {
         private readonly MapContext _context;
+
+        public MapRepository(MapContext context)
+        {
+            _context = context;
+        }
+
         public async Task CreateAsync(T entity)
         {
             _context.Set<T>().Add(entity);

@@ -19,8 +19,11 @@ C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\bin\Debug\net8.0\Microsoft.Ext
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\bin\Debug\net8.0\NetTopologySuite.dll
+C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\bin\Debug\net8.0\NetTopologySuite.IO.PostGis.dll
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\bin\Debug\net8.0\Npgsql.dll
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.dll
+C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\bin\Debug\net8.0\Npgsql.NetTopologySuite.dll
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -89,6 +92,7 @@ C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\obj\Debug\net8.0\BasarSoftTask
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\obj\Debug\net8.0\BasarSoftTask2_API.csproj.CoreCompileInputs.cache
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\obj\Debug\net8.0\BasarSoftTask2_API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\obj\Debug\net8.0\BasarSoftTask2_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\obj\Debug\net8.0\EFCoreNpgsqlNetTopologySuite.cs
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\obj\Debug\net8.0\BasarSoftTask2_API.sourcelink.json
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Hasan_Helvali\Desktop\BasarSoftTask2_API\obj\Debug\net8.0\staticwebassets.development.json

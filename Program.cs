@@ -1,6 +1,8 @@
 using BasarSoftTask2_API.Context;
 using BasarSoftTask2_API.IRepository;
 using BasarSoftTask2_API.Repository;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
