@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BasarSoftTask2_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac94d1746ca0a2c57e62e77c5958ae47c524e314")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+335214f0bad5de86bd89f30e9f7589d63f579170")]
 [assembly: System.Reflection.AssemblyProductAttribute("BasarSoftTask2_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BasarSoftTask2_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

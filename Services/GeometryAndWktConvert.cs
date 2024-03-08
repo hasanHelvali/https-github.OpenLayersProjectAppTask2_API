@@ -5,7 +5,7 @@ using NetTopologySuite;
 
 namespace BasarSoftTask2_API.Services
 {
-    public static class WktToGeometry
+    public static class GeometryAndWktConvert
     {
         public static Geometry WktToGeometrys(this string _wkt)
         {
@@ -17,5 +17,6 @@ namespace BasarSoftTask2_API.Services
             /*Burada yapılan isleem alınan wkt verisini geometry tipine cevirmesidir. Daha onceden alınan veriler de geometry tipine cast edilebiliryordu. 
              * Burada yapılan silemin farkı ise  geometry verisini 4326 seklinde haritada goruntulenecek bir formata cevirmesidir. Bu yapı cok onemlidir.*/
         }
+        //public static WKT
     }
 }

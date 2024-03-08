@@ -26,7 +26,15 @@ namespace BasarSoftTask2_API.Controllers
         [HttpGet]
         public async Task<IActionResult> ListLocation()
         {
-            var values = await _repository.GetAllAsync();
+            var _values = await _repository.GetAllAsync();
+            var values = _values.Select(x => new LocAndUserDTO
+            {
+                ID = x.ID,
+                WKT=x.Geometry.ToText(),
+                Name = x.Name,
+                Type = x.Type,
+            }).ToList();
+
             return Ok(values);
         }
 
@@ -41,7 +49,7 @@ namespace BasarSoftTask2_API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateMap(LocAndUserDTO locAndUser)
         {
-            var geometry = WktToGeometry.WktToGeometrys(locAndUser.WKT);
+            var geometry = GeometryAndWktConvert.WktToGeometrys(locAndUser.WKT);
             await _repository.CreateAsync(new LocAndUsers
             {
                 Name = locAndUser.Name,
