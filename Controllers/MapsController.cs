@@ -66,30 +66,5 @@ namespace BasarSoftTask2_API.Controllers
             await _repository.RemoveAsync(value);
             return Ok();
         }
-
-
-
-
-
-
-
-
-
-        //NtsGeometryServices  => NtsGeometryServices = new NtsGeometryServices(CoordinateArraySequenceFactory.Instance, new PrecisionModel(), _DefaultSrid);
-
-//GeometryFactory = NtsGeometryServices.CreateGeometryFactory();
-
-        //public static Geometry WktToGeometry(string _wkt)
-        //{
-        //    WKTReader wKTReader = new WKTReader(GeometryTool.Instance.NtsGeometryServices)
-        //    {
-        //        IsOldNtsCoordinateSyntaxAllowed = false
-        //    };
-        //    return wKTReader.Read(_wkt);
-        //}
-        //NtsGeometryServices = new NtsGeometryServices(CoordinateArraySequenceFactory.Instance, new PrecisionModel(), _DefaultSrid);
-
-        //GeometryFactory = NtsGeometryServices.CreateGeometryFactory();
-
     }
 }
