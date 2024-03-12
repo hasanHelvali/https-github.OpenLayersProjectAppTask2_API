@@ -58,6 +58,19 @@ namespace BasarSoftTask2_API.Controllers
             });
             return Ok();
         }
+        [HttpPut]
+        public async Task<IActionResult> UpdateMap(LocAndUserDTO locAndUsers)
+        {
+            var value = await _repository.GetByIdAsync(locAndUsers.ID);
+            var geometry = GeometryAndWktConvert.WktToGeometrys(locAndUsers.WKT);
+            value.ID = locAndUsers.ID;
+            value.Geometry = geometry ;
+            value.Name = locAndUsers.Name;
+            value.Type = locAndUsers.Type;
+
+            await _repository.UpdateAsync(value);
+            return Ok();
+        }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
