@@ -8,8 +8,10 @@ using NetTopologySuite;
 using NetTopologySuite.Geometries;
 using NetTopologySuite.Geometries.Implementation;
 using NetTopologySuite.IO;
+using System.Runtime.InteropServices;
 namespace BasarSoftTask2_API.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class MapsController : ControllerBase
@@ -78,6 +80,23 @@ namespace BasarSoftTask2_API.Controllers
             var value = await _repository.GetByIdAsync(id);
             await _repository.RemoveAsync(value);
             return Ok();
+        }
+
+
+        [HttpPost("InteractionExists")]
+        public async Task<IActionResult> InteractionExists( PointIntersectionDTO pointIntersectionDTO)
+        {
+           var geom = GeometryAndWktConvert.WktToGeometrys(pointIntersectionDTO.PointWKT);
+            var _values = await _repository.GetAllAsync();
+            var value = _values.Where(y=>y.Geometry.Contains(geom)).Select(x=>new LocAndUserDTO
+            {
+                ID=x.ID,
+                Name=x.Name,
+                Type=x.Type,
+                WKT=x.Geometry.ToText()
+            }).FirstOrDefault() ;
+            return Ok(value);
+
         }
     }
 }
